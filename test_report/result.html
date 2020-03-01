@@ -362,8 +362,8 @@ function hide_img(obj){
 </div>
 <div class='heading'>
 <h1>文化旅游云用户端接口测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2020-01-07 11:35:47</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:00.549803</p>
+<p class='attribute'><strong>开始时间:</strong> 2020-03-01 16:54:04</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:00.500029</p>
 <p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>1 <span class="tj failCase">Failure</span>2</p>
 
 <p class='description'>玩玩儿</p>
@@ -408,8 +408,29 @@ function hide_img(obj){
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td><div class='testcase'>test_001</div></td>
-    <td colspan='5' align='center'><span class='status passCase'>通过</span></td>
+    <td ><div class='testcase'>test_001</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a></span>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: [2020-03-01 16:54:04,954] - logger.py] - INFO: 【景区列表】正常请求
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
     <td>无截图</td>
 </tr>
 
@@ -439,8 +460,9 @@ function hide_img(obj){
         </div>
         <pre>
         
-ft2.1: Traceback (most recent call last):
-  File "F:\学习\yoyo\WHYC\test_case\test_cs01.py", line 25, in test_001
+ft2.1: [2020-03-01 16:54:05,209] - logger.py] - INFO: 【景区列表】请求参数错误
+Traceback (most recent call last):
+  File "F:\2020code\InterfaceFramework\test_case\test_cs01.py", line 26, in test_001
     self.assertEqual(returnDic[self.key], self.value, msg='请求错误')
 AssertionError: 'org.springframework.validation.BeanProper[1101 chars]aa"]' != 'success'
 Diff is 1140 characters long. Set self.maxDiff to None to see it. : 请求错误
@@ -480,8 +502,9 @@ Diff is 1140 characters long. Set self.maxDiff to None to see it. : 请求错误
         </div>
         <pre>
         
-ft3.1: Traceback (most recent call last):
-  File "F:\学习\yoyo\WHYC\test_case\test_cs01.py", line 25, in test_001
+ft3.1: [2020-03-01 16:54:05,332] - logger.py] - INFO: 【景区列表】请求参数为空
+Traceback (most recent call last):
+  File "F:\2020code\InterfaceFramework\test_case\test_cs01.py", line 26, in test_001
     self.assertEqual(returnDic[self.key], self.value, msg='请求错误')
 AssertionError: 'org.springframework.validation.BeanProper[1089 chars] ""]' != 'success'
 Diff is 1128 characters long. Set self.maxDiff to None to see it. : 请求错误

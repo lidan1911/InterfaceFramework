@@ -17,8 +17,9 @@ rootPath = ReadYaml().readByKey('project', 'basicUrl')
 class Test_cs01(unittest.TestCase, BasicFa):
 
     def test_001(self):
+        self.log.info(self.remark)
         url = rootPath + self.path
-        param = "siteCode="+siteCode+"&"+self.query
+        param = "siteCode=" + siteCode + "&" + self.query
         r = self.s.get(url, proxies=self.proxies, params=param)
         returnDic = json.loads(r.text)
         self.assertEqual(r.status_code, self.expect_code, msg='请求错误')

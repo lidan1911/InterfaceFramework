@@ -1,16 +1,18 @@
 import requests
+from common.logger import Log
 
 
 class BasicFa:
 
-    proxies = {'http': 'http://localhost:8888', 'https': 'http://localhost:8888'}
-    # proxies = None
+    # proxies = {'http': 'http://localhost:8888', 'https': 'http://localhost:8888'}
+    proxies = None
     s = requests.session()
+    log = Log()
 
     def __init__(self):
         pass
 
-    def setParameters(self, case_name, path, query, method, expect_code, key, value):
+    def setParameters(self, case_name, path, query, method, expect_code, key, value, remark):
         """
         set params
         :param case_name:
@@ -26,6 +28,7 @@ class BasicFa:
         self.expect_code = int(expect_code)
         self.key = str(key)
         self.value = str(value)
+        self.remark = str(remark)
 
 
 
