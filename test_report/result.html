@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>文化旅游云用户端接口测试报告</title>
+    <title>大行管APP接口测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.3"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -361,12 +361,12 @@ function hide_img(obj){
     </div>
 </div>
 <div class='heading'>
-<h1>文化旅游云用户端接口测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2020-03-01 16:54:04</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:00.500029</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>1 <span class="tj failCase">Failure</span>2</p>
+<h1>大行管APP接口测试报告</h1>
+<p class='attribute'><strong>开始时间:</strong> 2020-03-03 21:48:54</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:00.663038</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>4 <span class="tj failCase">Failure</span>2</p>
 
-<p class='description'>玩玩儿</p>
+<p class='description'>包括应急事件模块</p>
 </div>
 
 
@@ -423,7 +423,7 @@ function hide_img(obj){
         </div>
         <pre>
         
-pt1.1: [2020-03-01 16:54:04,954] - logger.py] - INFO: 【景区列表】正常请求
+pt1.1: [2020-03-03 21:48:54,964] - logger.py] - INFO: 【景区列表】正常请求
 
 
         </pre>
@@ -460,7 +460,7 @@ pt1.1: [2020-03-01 16:54:04,954] - logger.py] - INFO: 【景区列表】正常�
         </div>
         <pre>
         
-ft2.1: [2020-03-01 16:54:05,209] - logger.py] - INFO: 【景区列表】请求参数错误
+ft2.1: [2020-03-03 21:48:55,284] - logger.py] - INFO: 【景区列表】请求参数错误
 Traceback (most recent call last):
   File "F:\2020code\InterfaceFramework\test_case\test_cs01.py", line 26, in test_001
     self.assertEqual(returnDic[self.key], self.value, msg='请求错误')
@@ -502,7 +502,7 @@ Diff is 1140 characters long. Set self.maxDiff to None to see it. : 请求错误
         </div>
         <pre>
         
-ft3.1: [2020-03-01 16:54:05,332] - logger.py] - INFO: 【景区列表】请求参数为空
+ft3.1: [2020-03-03 21:48:55,401] - logger.py] - INFO: 【景区列表】请求参数为空
 Traceback (most recent call last):
   File "F:\2020code\InterfaceFramework\test_case\test_cs01.py", line 26, in test_001
     self.assertEqual(returnDic[self.key], self.value, msg='请求错误')
@@ -518,10 +518,124 @@ Diff is 1128 characters long. Set self.maxDiff to None to see it. : 请求错误
     <td>无截图</td>
 </tr>
 
+<tr class='passClass'>
+    <td>paramunittest.TestEmergencyType_0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c4',1)">详情</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_emergency_type_001</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.1')" >
+        通过</a></span>
+
+    <div id='div_pt4.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt4.1: [2020-03-03 21:48:55,515] - logger.py] - INFO: 【查询应急事件类型】正常请求
+token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTFjMSIsImp0aSI6IjliYjliZDEyLTY4YmYtNDg1MC05MjcyLTQwYmI5MzE0OTdhYyIsInN1YiI6ImNzbGFzYSIsImF1ZCI6ImNzbGFzYSIsImlhdCI6MTU4MzI0MzMxNSwiZXhwIjoxNTgzMzI5NzE1LCJzY29wZSI6WyJBQ0NFU1NfVE9LRU4iXX0.CpHOfizgLydqCsLYYkox1DNT1A5XEhDIY8im6eCK3M8D8dX4kvY_m7UhjF5TbkAVM1K3nZHyJPXJmfr3lqBVGw
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td>无截图</td>
+</tr>
+
+<tr class='passClass'>
+    <td>paramunittest.TestEmergencyType_1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c5',1)">详情</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt5.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_emergency_type_001</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.1')" >
+        通过</a></span>
+
+    <div id='div_pt5.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.1: [2020-03-03 21:48:55,555] - logger.py] - INFO: 【查询应急事件类型】请求参数错误
+token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTFjMSIsImp0aSI6Ijg5NTVhMTlmLWU1ZWYtNGE3Ny05ZWIzLTc4YmE5MjU1ZWJjNCIsInN1YiI6ImNzbGFzYSIsImF1ZCI6ImNzbGFzYSIsImlhdCI6MTU4MzI0MzMxNSwiZXhwIjoxNTgzMzI5NzE1LCJzY29wZSI6WyJBQ0NFU1NfVE9LRU4iXX0.45FmpY2ShatFFhIy361oBqXOlgxQRqTlPwEiVBnZZkdVT3E8amAFn5nuYHTvrfjzm28EuqV5yDbIFzd-pobrpg
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td>无截图</td>
+</tr>
+
+<tr class='passClass'>
+    <td>paramunittest.TestEmergencyType_2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c6',1)">详情</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt6.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_emergency_type_001</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.1')" >
+        通过</a></span>
+
+    <div id='div_pt6.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt6.1: [2020-03-03 21:48:55,591] - logger.py] - INFO: 【查询应急事件类型】请求参数为空
+token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTFjMSIsImp0aSI6IjRkMWQzNTUwLTg4ZGEtNDIwNi04MTk0LThkZDBmMmIyOGI4MyIsInN1YiI6ImNzbGFzYSIsImF1ZCI6ImNzbGFzYSIsImlhdCI6MTU4MzI0MzMxNSwiZXhwIjoxNTgzMzI5NzE1LCJzY29wZSI6WyJBQ0NFU1NfVE9LRU4iXX0.jdOo7Tc1cNFuQgzM5--2cYuSWf7wXqhP_Mw5WPM7uDt4rUPRBJszEtxJWrzdPt7e5aAbmFDYLjFZOOqdXEM2Tw
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td>无截图</td>
+</tr>
+
 <tr id='total_row'>
     <th>统计</th>
-    <th>3</th>
-    <th>1</th>
+    <th>6</th>
+    <th>4</th>
     <th>2</th>
     <th>0</th>
     <th>&nbsp;</th>
@@ -530,7 +644,7 @@ Diff is 1128 characters long. Set self.maxDiff to None to see it. : 请求错误
 </table>
 <script>
     showCase(1);
-    drawCircle(1, 2, 0);
+    drawCircle(4, 2, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>

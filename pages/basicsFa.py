@@ -12,6 +12,7 @@ class BasicFa:
     def __init__(self):
         pass
 
+
     def setParameters(self, case_name, path, query, method, expect_code, key, value, remark):
         """
         set params

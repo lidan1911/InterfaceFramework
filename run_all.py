@@ -22,8 +22,8 @@ while 1 == 1:
             with open(reportPath, "wb") as fp:
                 runner = HTMLTestRunner(
                     stream=fp,
-                    title="文化旅游云用户端接口测试报告",
-                    description="玩玩儿"
+                    title="大行管APP接口测试报告",
+                    description="包括应急事件模块"
                     # retry=2
                 )
                 runner.run(discover)
