@@ -13,7 +13,7 @@ class BasicFa:
         pass
 
 
-    def setParameters(self, case_name, path, query, method, expect_code, key, value, remark):
+    def setParameters(self, interface, case_name, path, query, method, expect_code, key, value, remark):
         """
         set params
         :param case_name:
@@ -22,6 +22,8 @@ class BasicFa:
         :param method
         :return:
         """
+        # self.id = int(id)
+        self.interface = str(interface)
         self.case_name = str(case_name)
         self.path = str(path)
         self.query = str(query)

@@ -18,7 +18,7 @@ while 1 == 1:
             log.info("************************************************ 测试开始 ************************************************")
             log.info('测试报告所在目录：%s' % reportPath)  # 将resultPath的值输入到日志，方便定位查看问题
             log.info('excel用例所在目录：%s' % dataPath)  # 同理
-            discover = unittest.defaultTestLoader.discover(casePath, pattern="test*.py")
+            discover = unittest.defaultTestLoader.discover(casePath, pattern="test_emergency*.py")
             with open(reportPath, "wb") as fp:
                 runner = HTMLTestRunner(
                     stream=fp,

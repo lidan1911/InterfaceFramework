@@ -21,6 +21,7 @@ class ReadYaml:
         f = open(self.yamlPath, 'r', encoding='utf-8')
         cfg = f.read()
         dic = yaml.load(cfg)  # string->dic
+        f.close()
         if key:
             for i in key:
                 dic = dic[i]

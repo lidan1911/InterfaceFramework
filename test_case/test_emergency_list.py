@@ -1,20 +1,17 @@
 import unittest
-from common.readYaml import ReadYaml
-from common.readExcel import ReadExcel
-import paramunittest
 from pages.basicsFa import BasicFa
+from common.readExcel import ReadExcel
+from common.readYaml import ReadYaml
+import paramunittest
 from pages.login import Login
 
-
-login_xls = ReadExcel().get_xls('emergency.xlsx', 'emergency', interface='emergency_type')
+login_xls = ReadExcel().get_xls('emergency.xlsx', 'emergency', interface='emergency_list')
 rootPath = ReadYaml().readByKey('project_DHG', 'basicUrl')
 
-
 @paramunittest.parametrized(*login_xls)
-class TestEmergencyType(unittest.TestCase, BasicFa):
+class TestEmergencyList(unittest.TestCase, BasicFa):
 
-    def test_emergency_type_001(self):
-        # self.log.info(self.remark)
+    def test_emergency_list_001(self):
         url = rootPath + self.path
         self.token = Login().loginMethod_DHG_app()
         self.h = {
@@ -32,7 +29,6 @@ class TestEmergencyType(unittest.TestCase, BasicFa):
         finally:
             self.s.close()
             self.log.info("%s      请求结果：%s" % (self.remark, r.status_code))
-
 
 if __name__ == '__main__':
     unittest.main()

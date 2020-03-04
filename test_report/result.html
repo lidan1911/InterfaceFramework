@@ -362,9 +362,9 @@ function hide_img(obj){
 </div>
 <div class='heading'>
 <h1>大行管APP接口测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2020-03-03 21:48:54</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:00.663038</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>4 <span class="tj failCase">Failure</span>2</p>
+<p class='attribute'><strong>开始时间:</strong> 2020-03-05 00:12:20</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:00.240014</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>6</p>
 
 <p class='description'>包括应急事件模块</p>
 </div>
@@ -398,7 +398,7 @@ function hide_img(obj){
 </tr>
 
 <tr class='passClass'>
-    <td>paramunittest.Test_cs01_0</td>
+    <td>paramunittest.TestEmergencyList_0</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -408,7 +408,7 @@ function hide_img(obj){
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td ><div class='testcase'>test_001</div></td>
+    <td ><div class='testcase'>test_emergency_list_001</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -423,7 +423,11 @@ function hide_img(obj){
         </div>
         <pre>
         
-pt1.1: [2020-03-03 21:48:54,964] - logger.py] - INFO: 【景区列表】正常请求
+pt1.1: 'success' != '资源编码不能为空！'
+- success
++ 资源编码不能为空！
+
+[2020-03-05 00:12:20,355] - logger.py] - INFO: 【查询应急事件列表】正常请求      请求结果：200
 
 
         </pre>
@@ -434,38 +438,37 @@ pt1.1: [2020-03-03 21:48:54,964] - logger.py] - INFO: 【景区列表】正常�
     <td>无截图</td>
 </tr>
 
-<tr class='failClass'>
-    <td>paramunittest.Test_cs01_1</td>
+<tr class='passClass'>
+    <td>paramunittest.TestEmergencyList_1</td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
-    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c2',1)">详情</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft2.1' class='none'>
-    <td ><div class='testcase'>test_001</div></td>
+<tr id='pt2.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_emergency_list_001</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status failCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
-        失败</a></span>
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        通过</a></span>
 
-    <div id='div_ft2.1' class="popup_window">
+    <div id='div_pt2.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft2.1: [2020-03-03 21:48:55,284] - logger.py] - INFO: 【景区列表】请求参数错误
-Traceback (most recent call last):
-  File "F:\2020code\InterfaceFramework\test_case\test_cs01.py", line 26, in test_001
-    self.assertEqual(returnDic[self.key], self.value, msg='请求错误')
-AssertionError: 'org.springframework.validation.BeanProper[1101 chars]aa"]' != 'success'
-Diff is 1140 characters long. Set self.maxDiff to None to see it. : 请求错误
+pt2.1: 'fail' != 'success'
+- fail
++ success
+
+[2020-03-05 00:12:20,393] - logger.py] - INFO: 【查询应急事件列表】请求参数错误      请求结果：200
 
 
         </pre>
@@ -476,38 +479,33 @@ Diff is 1140 characters long. Set self.maxDiff to None to see it. : 请求错误
     <td>无截图</td>
 </tr>
 
-<tr class='failClass'>
-    <td>paramunittest.Test_cs01_2</td>
+<tr class='passClass'>
+    <td>paramunittest.TestEmergencyList_2</td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
-    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c3',1)">详情</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='ft3.1' class='none'>
-    <td ><div class='testcase'>test_001</div></td>
+<tr id='pt3.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_emergency_list_001</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status failCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
-        失败</a></span>
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        通过</a></span>
 
-    <div id='div_ft3.1' class="popup_window">
+    <div id='div_pt3.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft3.1: [2020-03-03 21:48:55,401] - logger.py] - INFO: 【景区列表】请求参数为空
-Traceback (most recent call last):
-  File "F:\2020code\InterfaceFramework\test_case\test_cs01.py", line 26, in test_001
-    self.assertEqual(returnDic[self.key], self.value, msg='请求错误')
-AssertionError: 'org.springframework.validation.BeanProper[1089 chars] ""]' != 'success'
-Diff is 1128 characters long. Set self.maxDiff to None to see it. : 请求错误
+pt3.1: [2020-03-05 00:12:20,428] - logger.py] - INFO: 【查询应急事件列表】请求参数为空      请求结果：200
 
 
         </pre>
@@ -544,8 +542,7 @@ Diff is 1128 characters long. Set self.maxDiff to None to see it. : 请求错误
         </div>
         <pre>
         
-pt4.1: [2020-03-03 21:48:55,515] - logger.py] - INFO: 【查询应急事件类型】正常请求
-token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTFjMSIsImp0aSI6IjliYjliZDEyLTY4YmYtNDg1MC05MjcyLTQwYmI5MzE0OTdhYyIsInN1YiI6ImNzbGFzYSIsImF1ZCI6ImNzbGFzYSIsImlhdCI6MTU4MzI0MzMxNSwiZXhwIjoxNTgzMzI5NzE1LCJzY29wZSI6WyJBQ0NFU1NfVE9LRU4iXX0.CpHOfizgLydqCsLYYkox1DNT1A5XEhDIY8im6eCK3M8D8dX4kvY_m7UhjF5TbkAVM1K3nZHyJPXJmfr3lqBVGw
+pt4.1: [2020-03-05 00:12:20,466] - logger.py] - INFO: 【查询应急事件类型】正常请求      请求结果：200
 
 
         </pre>
@@ -582,8 +579,7 @@ token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTF
         </div>
         <pre>
         
-pt5.1: [2020-03-03 21:48:55,555] - logger.py] - INFO: 【查询应急事件类型】请求参数错误
-token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTFjMSIsImp0aSI6Ijg5NTVhMTlmLWU1ZWYtNGE3Ny05ZWIzLTc4YmE5MjU1ZWJjNCIsInN1YiI6ImNzbGFzYSIsImF1ZCI6ImNzbGFzYSIsImlhdCI6MTU4MzI0MzMxNSwiZXhwIjoxNTgzMzI5NzE1LCJzY29wZSI6WyJBQ0NFU1NfVE9LRU4iXX0.45FmpY2ShatFFhIy361oBqXOlgxQRqTlPwEiVBnZZkdVT3E8amAFn5nuYHTvrfjzm28EuqV5yDbIFzd-pobrpg
+pt5.1: [2020-03-05 00:12:20,520] - logger.py] - INFO: 【查询应急事件类型】请求参数错误      请求结果：200
 
 
         </pre>
@@ -620,8 +616,11 @@ token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTF
         </div>
         <pre>
         
-pt6.1: [2020-03-03 21:48:55,591] - logger.py] - INFO: 【查询应急事件类型】请求参数为空
-token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTFjMSIsImp0aSI6IjRkMWQzNTUwLTg4ZGEtNDIwNi04MTk0LThkZDBmMmIyOGI4MyIsInN1YiI6ImNzbGFzYSIsImF1ZCI6ImNzbGFzYSIsImlhdCI6MTU4MzI0MzMxNSwiZXhwIjoxNTgzMzI5NzE1LCJzY29wZSI6WyJBQ0NFU1NfVE9LRU4iXX0.jdOo7Tc1cNFuQgzM5--2cYuSWf7wXqhP_Mw5WPM7uDt4rUPRBJszEtxJWrzdPt7e5aAbmFDYLjFZOOqdXEM2Tw
+pt6.1: 'fail' != 'success'
+- fail
++ success
+
+[2020-03-05 00:12:20,557] - logger.py] - INFO: 【查询应急事件类型】请求参数为空      请求结果：200
 
 
         </pre>
@@ -635,8 +634,8 @@ token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTF
 <tr id='total_row'>
     <th>统计</th>
     <th>6</th>
-    <th>4</th>
-    <th>2</th>
+    <th>6</th>
+    <th>0</th>
     <th>0</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
@@ -644,7 +643,7 @@ token== eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiI3ZmRkYjg4M2FlYzU0MTM5OTQ0ODI0Y2E4Y2VhZTF
 </table>
 <script>
     showCase(1);
-    drawCircle(4, 2, 0);
+    drawCircle(6, 0, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>
